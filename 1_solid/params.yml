@@ -1,0 +1,38 @@
+
+
+ensemble: "nvt" # "nve" or "nvt"
+
+
+
+system:
+        
+        box_size: 15.0   # Volume = box_size^3 
+
+        density: 0.85    # Number density: N/V
+
+        temperature: 0.40 # temperature k_B * T
+
+
+integrator:
+
+        dt: 0.01            #
+
+        max_timestep: 10000 #
+                    
+        obs_timestep: 50    #
+
+
+# for NVT
+control:
+        nose_hoover_ctime: 1.0 # feedback time
+
+
+hyparameter:
+
+        cutoff: 2.50     #
+
+        margine: 0.50     #
+
+
+
+
